@@ -1092,6 +1092,12 @@ packages/lib/services/UndoRedoService.js.map
 packages/lib/services/WhenClause.d.ts
 packages/lib/services/WhenClause.js
 packages/lib/services/WhenClause.js.map
+<<<<<<< HEAD
+=======
+packages/lib/services/WhenClause.test.d.ts
+packages/lib/services/WhenClause.test.js
+packages/lib/services/WhenClause.test.js.map
+>>>>>>> 6f2f24171df1be961381a810732aa7aa908d8c88
 packages/lib/services/commands/MenuUtils.d.ts
 packages/lib/services/commands/MenuUtils.js
 packages/lib/services/commands/MenuUtils.js.map

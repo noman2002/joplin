@@ -695,11 +695,24 @@ function useMenu(props: Props) {
 						},
 					],
 				},
+<<<<<<< HEAD
+=======
+				folder: {
+					label: _('Note&book'),
+					submenu: [
+						menuItemDic.showShareFolderDialog,
+					],
+				},
+>>>>>>> 6f2f24171df1be961381a810732aa7aa908d8c88
 				note: {
 					label: _('&Note'),
 					submenu: [
 						menuItemDic.toggleExternalEditing,
 						menuItemDic.setTags,
+<<<<<<< HEAD
+=======
+						menuItemDic.showShareNoteDialog,
+>>>>>>> 6f2f24171df1be961381a810732aa7aa908d8c88
 						separator(),
 						menuItemDic.showNoteContentProperties,
 					],
@@ -818,6 +831,10 @@ function useMenu(props: Props) {
 				rootMenus.edit,
 				rootMenus.view,
 				rootMenus.go,
+<<<<<<< HEAD
+=======
+				rootMenus.folder,
+>>>>>>> 6f2f24171df1be961381a810732aa7aa908d8c88
 				rootMenus.note,
 				rootMenus.tools,
 				rootMenus.help,

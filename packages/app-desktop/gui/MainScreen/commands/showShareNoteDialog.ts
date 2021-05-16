@@ -18,5 +18,9 @@ export const runtime = (comp: any): CommandRuntime => {
 				},
 			});
 		},
+<<<<<<< HEAD
+=======
+		enabledCondition: 'joplinServerConnected && oneNoteSelected',
+>>>>>>> 6f2f24171df1be961381a810732aa7aa908d8c88
 	};
 };

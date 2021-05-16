@@ -27,6 +27,10 @@ export interface WhenClauseContext {
 	noteIsHtml: boolean;
 	folderIsShareRootAndOwnedByUser: boolean;
 	folderIsShared: boolean;
+<<<<<<< HEAD
+=======
+	joplinServerConnected: boolean;
+>>>>>>> 6f2f24171df1be961381a810732aa7aa908d8c88
 }
 
 export default function stateToWhenClauseContext(state: State, options: WhenClauseContextOptions = null): WhenClauseContext {
@@ -42,7 +46,11 @@ export default function stateToWhenClauseContext(state: State, options: WhenClau
 	// const commandNoteId = options.commandNoteId || selectedNoteId;
 	// const commandNote:NoteEntity = commandNoteId ? BaseModel.byId(state.notes, commandNoteId) : null;
 
+<<<<<<< HEAD
 	const commandFolderId = options.commandFolderId;
+=======
+	const commandFolderId = options.commandFolderId || state.selectedFolderId;
+>>>>>>> 6f2f24171df1be961381a810732aa7aa908d8c88
 	const commandFolder: FolderEntity = commandFolderId ? BaseModel.byId(state.folders, commandFolderId) : null;
 
 	return {
@@ -75,5 +83,10 @@ export default function stateToWhenClauseContext(state: State, options: WhenClau
 		// Current context folder
 		folderIsShareRootAndOwnedByUser: commandFolder ? isRootSharedFolder(commandFolder) && isSharedFolderOwner(state, commandFolder.id) : false,
 		folderIsShared: commandFolder ? !!commandFolder.share_id : false,
+<<<<<<< HEAD
+=======
+
+		joplinServerConnected: state.settings['sync.target'] === 9,
+>>>>>>> 6f2f24171df1be961381a810732aa7aa908d8c88
 	};
 }
